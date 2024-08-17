@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Name from "./Components/Name";
+import Job from "./Components/Job";
+import Hobbies from "./Components/Hobbies";
+
+// App.js is the root component that houses all other components
+// App.js is the root/main component that wraps the other components
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>
+        <p className="App">Assignment - Video 44</p>
+      </h1>
+
+      <Name />
+      <Job />
+      <Hobbies />
     </div>
   );
 }
